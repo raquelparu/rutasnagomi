@@ -170,6 +170,20 @@ nav a:hover {
     background-color: #BBACA0;
 }
 
+/* Menu Hamburguesa */
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
 /* ==========================
    LAYOUT PRINCIPAL
 ========================== */
@@ -543,36 +557,68 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+
+/* Menu Hamburguesa */
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  color: #DCD4CE;
+  cursor: pointer;
+  text-align: right;
+  margin-right: 16px;
+}
+
+.menu {
+  display: none; /* Menu PC oculto en móvil */
+  flex-direction: column;
+  align-items: center;
+  background: #DCD4CE;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  color: #C3010F;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.menu li {
+  width: 100%;
+  border-bottom: 1px solid #C3010F;
+  text-align: center;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+/* Mostrar el menú cuando el checkbox esté activado */
+
+#menu-toggle:checked + .hamburger + .menu {
+  display: flex;
+}
+
+/* Ocultar SubMenu para facilitar visualización en pantallas pequeñas */
+  
+  .submenu-items {
+    display: none !important; 
   }
 
-  nav li {
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #DCD4CE; /* línea separadora */
-    text-align: center;
-    padding: 4px 0;
+  .submenu:hover .submenu-items {
+    display: none; 
   }
 
-  nav li:last-child {
-    border-bottom: none; /* sin línea en el último */
-  }
-
-  nav a {
-    display: block;
-    text-decoration: none;
-    color: #FEF9F9;
-    font-weight: 600;
-    width: 100%;
-  }
-
-  nav li:hover a {
-    color: #010101; 
-  }
+  /* Contenido */
 
   .contenido-principal h1 {
     font-size: 28px;
