@@ -42,6 +42,17 @@ p {
   color: #010101;
 }
 
+ul li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #010101;
+}
+
+ul li strong {
+    font-weight: bold; 
+    font-family: inherit; 
+}
+
 /* ==========================
    CABECERA / HEADER
 ========================== */
@@ -103,11 +114,12 @@ nav ul {
 
 nav li {
   margin: 0 12px;
+  position: relative;
 }
 
 nav a {
   text-decoration: none;
-  color: #FEF9F9;
+  color: #FCF1EA;
   font-family: Arial, sans-serif;
   font-size: 19px;
   text-transform: uppercase;
@@ -118,6 +130,44 @@ nav a {
 
 nav a:hover {
   color: #010101;
+}
+
+/* Submenu */
+
+.submenu-items {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #DCD4CE;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    border-radius: 0 0 5px 5px;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-items li a {
+    display: block;
+    padding: 6px 6px;
+    color: #C3010F;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #BBACA0;
+}
+
+.submenu-items li:last-child a {
+    border-bottom: none;
+}
+
+.submenu-items li a:hover {
+    background-color: #BBACA0;
 }
 
 /* ==========================
@@ -154,10 +204,6 @@ h2.especial {
   margin-bottom: 18px; 
 }
 
-.contenido-principal p:first-of-type {
-    margin-bottom: 24px; 
-}
-
 .contenido-principal h3 {
     margin-top: 24px; 
     margin-bottom: 16px;
@@ -192,6 +238,10 @@ h2.especial {
 }
 
 .entrada p {
+  margin-bottom: 8px;
+}
+
+.entrada ul li:last-child {
   margin-bottom: 8px;
 }
 
@@ -278,6 +328,7 @@ h2.especial {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+    margin-top: 24px; 
 }
 
 .boton:hover {
@@ -301,7 +352,7 @@ h2.especial {
 
 .barra-lateral h3 {
   background-color: #C3010F;
-  color: #FEF9F9;
+  color: #FCF1EA;
   padding: 8px;
   border-radius: 8px;
   text-transform: uppercase;
@@ -422,16 +473,6 @@ h2.especial {
   margin-bottom: 16px;
   line-height: 1.4;
   color: #010101;
-}
-
-.barra-lateral .redes h3 {
-  font-size: 18px;
-  background-color: #C3010F;
-  color: #FEF9F9;
-  padding: 8px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
 }
 
 .barra-lateral .redes ul {
