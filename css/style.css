@@ -17,15 +17,16 @@ body {
   background-attachment: fixed;
 }
 
-/* ===== TIPOGRAFÍA Y ENCABEZADOS ===== */
+/* Tipografía y Encabezados */
+
 h1 {
-  font-family: Georgia, serif;
+  font-family: Verdana, sans-serif;
   font-size: 32px;
   color: #010101;
 }
 
 h2 {
-  font-family: Georgia, serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   color: #C3010F;
 }
@@ -210,12 +211,11 @@ main .container {
 }
 
 h2.especial {
-  color: #010101;        
-  font-size: 28px;       
-  letter-spacing: 2px;   
+  color: #010101;              
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 18px; 
+  letter-spacing: 1px;
+  margin-bottom: 24px;
 }
 
 .contenido-principal h3 {
@@ -244,11 +244,12 @@ h2.especial {
 /* Entradas */
 
 .entrada {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .entrada h2 {
   margin-bottom: 8px;
+
 }
 
 .entrada p {
@@ -266,6 +267,15 @@ h2.especial {
   border-radius: 8px;
 }
 
+.entrada .boton {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 18px;
+  font-weight: normal;
+  padding: 6px 14px;
+}
+
 /* Formulario de contacto */
 
 .formulario-contacto {
@@ -278,6 +288,7 @@ h2.especial {
 
 .formulario-contacto label {
     font-weight: bold;
+    font-family: Arial;
 }
 
 .formulario-contacto input,
@@ -299,12 +310,15 @@ h2.especial {
     border-radius: 6px;
     background-color: transparent;
     font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .formulario-contacto button:hover {
-    border-color: #010101;
+    border: 2px solid #010101;
+    background-color: transparent;
     color: #010101;
 }
 
@@ -332,17 +346,17 @@ h2.especial {
 
 /* Botones */
 
-.boton {
+ .boton {
     display: inline-block;
-    padding: 10px 18px;
+    padding: 12px 18px;
     background-color: transparent; 
     color: #C3010F;                
     border: 2px solid #C3010F;     
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
-    margin-top: 24px; 
+    font-family: Arial, sans-serif;
+    margin-top: 12px;
 }
 
 .boton:hover {
@@ -468,7 +482,7 @@ h2.especial {
 
 .barra-lateral .guia .mini-guia {
     display: block;
-    margin: 12px auto 16px auto;
+    margin: 12px auto 0 auto;
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -477,10 +491,15 @@ h2.especial {
 .barra-lateral .boton-container {
   display: flex;
   justify-content: center; 
-  margin-top: 12px;        
+  margin-top: 12px;  
+}
+
+.barra-lateral .boton-container .boton {
+    margin: 0; 
 }
 
 /* Redes sociales */
+
 .barra-lateral .redes {
   text-align: justify;
   font-size: 16px;
