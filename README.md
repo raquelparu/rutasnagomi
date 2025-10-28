@@ -22,11 +22,12 @@ Bienvenido a **Rutas Nagomi**, un sitio web dedicado a explorar Japón en armon�
 
 ## Características
 
-- **Diseño responsive**: Adaptable a escritorio, tablet y móvil.
-- **Contenido organizado**: Entradas de blog, rutas populares y guías de viaje.
-- **Barra lateral** con rutas populares, video de inspiración, guía digital descargable y redes sociales.
-- **Formularios de contacto** sencillo y fácil de usar.
-- **Uso de fuentes** estilo coherente y tamaños legibles para mejorar la experiencia de usuario.
+- **Diseño responsive**: adaptable a escritorio, tablet y móvil.
+- **Contenido organizado**: entradas de blog, rutas populares y guías de viaje.
+- **Barra de navegación**: configuración de un menu desplegable en PC y un menu hamburguesa en pantallas pequeñas para una cómoda visualización.
+- **Barra lateral**: con rutas populares, video de inspiración, guía digital descargable y redes sociales.
+- **Formularios de contacto**: sencillo y fácil de usar.
+- **Uso de fuentes**: estilo coherente y tamaños legibles para mejorar la experiencia de usuario.
 
 ---
 
