@@ -127,6 +127,7 @@ nav a {
   font-weight: bold;
   padding: 12px;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -161,6 +162,7 @@ nav a:hover {
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid #BBACA0;
+    transition: all 0.3s ease;
 }
 
 .submenu-items li:last-child a {
